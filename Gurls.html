@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+        .body {
+            background: rgb(164, 0, 97);
+            background: linear-gradient(90deg, rgba(164, 0, 97, 1) 0%, rgba(183, 85, 146, 1) 25%, rgba(236, 236, 234, 1) 50%, rgba(196, 78, 85, 1) 75%, rgba(138, 30, 4, 1) 100%);
+            text-align: center;
+        }
+
+        .button {
+            background-color: #D8BFD8; /* purple */
+            border: none;
+            border-radius: 12px;
+            color: black;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }</style>
+    <title>Sleeping With Girls Clicker</title>
+</head>
+<body class="body">
+<button class='button' onclick="clickyFunction()">"So how many girls have you slept with?"</button>
+<h2 id="mainText"></h2>
+
+<script>
+
+
+    function clickyFunction() {
+        document.getElementById('mainText').innerHTML= randomEl(elementA);
+    }
+
+    function randomEl(list) {
+        var i = Math.floor(Math.random() * list.length);
+        return list[i];
+    }
+
+    var elementA = ["...", "The limit does not exist.", "More than you've slept with.", "Not as many as I'd like", "Well it would be one more but she won't text me back.", "Less than the men you've slept with.", "Enough.", "Uhh lemme check my notes.", "Oh fuck I wasn't expecting a math test.", "One... two... uhh, do you have a pen and paper?", "Oof I was never good at algebra.", "Define girls.", "Define slept with.", "About as many as you've had drinks.", "I can tell you but you're going to need to get real cool with a lot of things real quick.", "A lezzie doesn't kiss and tell.", "See, it's a funny story-", "I need to make some calls, but I'll get back to you.", "Are we counting myself?", "Would be more if Her had a better user interface.", "More than my brother has.", "Well, once you pop the fun don't stop.", "They're like potato chips...", "You can never have just one!", "You're giving my social anxiety WAY too much credit here.", "Ah. Girls. Yes. I've...heard of them.", "Girls? Well, ya know, I've heard OF them but never really read it myself.", "I think I missed that class, actually.", "Are we counting my own hands? It's more impressive if we count my own hands."];
+</script>
+</body>
+</html>
