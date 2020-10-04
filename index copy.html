@@ -1,0 +1,46 @@
+
+<html>
+<head>
+    <style>
+        .body {
+            background: #c3c728;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #c3c728; /* purple */
+            border: none;
+            border-radius: 12px;
+            color: black;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }</style>
+    <title>C O N F I R M</title>
+</head>
+<body class="body">
+<button class='button' onclick="clickyFunction()">C O N F I R M</button>
+<h2 id="mainText"></h2>
+
+<script>
+
+
+    function clickyFunction() {
+        document.getElementById('mainText').innerHTML= randomEl(elementA);
+    }
+
+    function randomEl(list) {
+        var i = Math.floor(Math.random() * list.length);
+        return list[i];
+    }
+
+    var elementA = ["H.E. Ballard","Harvey Daniels", "Robert Hamilton", "Salvatore Luciano", "Lev Geller", "Piper Sandford", "Lionel Morning", "Elizabeth Monsanto", "Graham Harper", "Betty", "Scratch", "Roy", "Sally Boy", "Margaret Hamilton", "Midge", "Normal", "Queen", "Linchpin", "Cursed", "Devil", "Hierophant", "Haunted", "Magus", "Mole", "Hunter", "Mole Hunter", "Prodigal Son", "Stranger"];
+</script>
+</body>
+</html>
