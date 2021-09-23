@@ -11,7 +11,7 @@
 <script type="text/bitsyGameData" id="exportedGameData">
 Safety
 
-# BITSY VERSION 7.9
+# BITSY VERSION 7.10
 
 ! ROOM_FORMAT 1
 
@@ -790,13 +790,13 @@ Why are you always so standoffish? Why are you so shy?
 
 Here's some money, don't you want to take some money?
 
-Sit here, with your uncles, we'll teach you how to play cards. We're all family here.
-
-It'd be so cute if you won.
-
-{clr1}I don't think you'd say that. But I do think you're thinking something like it.{clr1}
+Sit here, we'll teach you how to play cards. We're all family here.
 
 Why won't you sit here with me? We're all family here.
+
+
+{clr1}Uhh... okay but only if you're not playing.{clr1}
+
 
 Why don't you want to go swimming with your cousins?
 
@@ -864,7 +864,7 @@ You know you're not special, right?
 
 So that's what you think passes for impressive? So that's what you think makes you so special?
 
-You're just a whiny little brat who wants to copy everything your mother does.
+You're just a stupid girl who wants to copy everything your mother does.
 
 You even look like her.
 
@@ -1134,10 +1134,10 @@ body {
 <script>
 function startExportedGame() {
 	var gameCanvas = document.getElementById("game");
-	var exportedGameData = document.getElementById("exportedGameData").text.slice(1);
-	var exportedDefaultFontData = document.getElementById(defaultFontName).text.slice(1)
+	var gameData = document.getElementById("exportedGameData").text.slice(1);
+	var defaultFontData = document.getElementById(defaultFontName).text.slice(1)
 	attachCanvas(gameCanvas);
-	loadGame(exportedGameData, exportedDefaultFontData);
+	loadGame(gameData, defaultFontData);
 }
 </script>
 
@@ -5961,7 +5961,7 @@ var spriteStartLocations = {};
 /* VERSION */
 var version = {
 	major: 7, // major changes
-	minor: 9, // smaller changes
+	minor: 10, // smaller changes
 	devBuildPhase: "RELEASE",
 };
 function getEngineVersion() {
@@ -10127,6 +10127,7 @@ CHAR 255
 010010
 000000
 000000
+</script>
 </script>
 
 </head>
